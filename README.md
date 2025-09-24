@@ -17,7 +17,7 @@ Create Tools (for AI Agents) using YAML and Bash.
 
 ---
 
-## Example
+## Basic Example
 
 Create a YAML file called `nonce.yml`:
 
@@ -51,6 +51,24 @@ If the required environment variable is missing:
 ```text
 Environment variable 'JWT_ENV' is missing!
 ```
+
+### Example with Multiple Same Flags
+```
+# mailgun.yml
+curl:
+  flags:
+    s: ""
+    user: "api:[key]"
+    F:
+      - "from=Mailgun Sandbox <postmaster@[redacted].mailgun.org>"
+      - "to=Neil <neil@[redacted]>"
+      - "subject=Hello Neil"
+      - "text=Congratulations Neil, you just sent an email with Mailgun! You are truly awesome!"
+  args:
+    - "https://api.mailgun.net/v3/[redacted].mailgun.org/messages"
+
+```
+
 
 ---
 
