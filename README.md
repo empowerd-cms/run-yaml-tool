@@ -1,7 +1,7 @@
 # run-yaml-tool
-Create Tools (for AI Agents) using YAML and Bash.
+Create Tools (for AI Agents) using YAML and Python 3.
 
-`run-yaml-tool.sh` is a Bash utility for executing commands defined in YAML files with support for environment variable interpolation. It makes it easy to define complex command invocations in YAML and run them safely with automatic error handling.
+`run-yaml-tool.py` is a utility script for executing commands defined in YAML files with support for environment variable interpolation. It makes it easy to define complex command invocations in YAML and run them safely with automatic error handling.
 
 ---
 
@@ -34,7 +34,7 @@ Run the script with an environment variable:
 
 ```bash
 export JWT_ENV="mysecretjwt"
-./run-yaml-tool.sh nonce.yml
+./run-yaml-tool.py nonce.yml
 ```
 
 Output:
